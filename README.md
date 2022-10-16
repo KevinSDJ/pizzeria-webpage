@@ -1,6 +1,1 @@
-# Pizzeria-romolo by ID for ideas
-
-> colores principales
-
-* green-lima-300
-* gray-isolate-?
+# Pizzeria landing page by ID for ideas
