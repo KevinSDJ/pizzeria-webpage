@@ -1,11 +1,12 @@
 import Navbar from './../../components/navbar'
-import SectionInitial from '../sections/initial'
+import {Outlet} from 'react-router-dom'
+
 
 const Home =()=>{
     return (
-        <div className="w-full bg-slate-800 h-screenX3">
+        <div className="w-full bg-slate-800">
             <Navbar/>
-            <SectionInitial/>
+            <Outlet/>
         </div>
     )
 }

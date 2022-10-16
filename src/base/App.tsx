@@ -6,8 +6,9 @@ const Home= lazy(()=>new Promise(resolve=>{
     import("./../views/Home").then((e:any)=>{
       resolve(e)
     })
-  },5000*12)
+  },5000)
 }))
+const MainSection=lazy(()=>import("./../views/sections/initial"))
 
 
 
@@ -17,9 +18,9 @@ function App() {
       <Suspense fallback={<LoadingInitial/>}>
         <Routes>
           {/*vista una sola pagina*/}
-          <Route path="/" element={<Home/>}/>
-          {/* vista varias paginas */}
-
+          <Route path="/" element={<Home/>}>
+            <Route path="/" element={<MainSection/>}/>
+          </Route>
         </Routes>
       </Suspense>
     </Router>
