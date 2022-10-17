@@ -5,7 +5,7 @@ import "./index.css"
 
 const NavBar = () => {
     return (
-        <header className='fixed w-full flex flex-row justify-between  lg:py-3 lg:px-20' >
+        <header className='fixed w-full z-40 flex flex-row justify-between  lg:py-3 lg:px-20' >
             <div className='flex items-center space-x-2'>
                 <img className='logo-nv w-20' src={Logo} alt={'logo-image'} />
                 <p className='logo-text text-3xl text-primary font-permanentMark'>
