@@ -16,11 +16,11 @@ const NavBar = () => {
                 <nav className="px-3 text-gray-300">
                     <ul className='flex flex-row space-x-6'> 
                         <li  className='space-y-2 '>
-                            <Link to={'#'} className=''>Home</Link>
+                            <Link to={'/'} className=''>Home</Link>
                             <hr className='border-b-2 w-0 border-b-primary'/>
                         </li>
                         <li className='space-y-2'>
-                            <Link to={'#'}>Menu</Link>
+                            <Link to={'menu'}>Menu</Link>
                             <hr className='border-b-2 w-0 border-b-primary'/>
                         </li>
                         <li className='space-y-2'>

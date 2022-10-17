@@ -3,12 +3,6 @@ li:hover>hr{
     transition: ease-in-out;
     transition-duration: 0.3s;
 }
-.logo-nv{
-    animation-name:animation2;
-    animation-delay: 500ms;
-    animation-duration: 1000ms;
-    animation-timing-function: ease-in-out;  
-}
 
 .logo-text:hover{
     animation-name:animation1;
@@ -29,14 +23,5 @@ li:hover>hr{
         
     }
 }
-@keyframes animation2 {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-    
-    
-}
+
 

@@ -9,6 +9,7 @@ const Home= lazy(()=>new Promise(resolve=>{
   },5000)
 }))
 const MainSection=lazy(()=>import("./../views/sections/initial"))
+const MenuSection= lazy(()=>import("./../views/sections/menu"))
 
 
 
@@ -20,6 +21,7 @@ function App() {
           {/*vista una sola pagina*/}
           <Route path="/" element={<Home/>}>
             <Route path="/" element={<MainSection/>}/>
+            <Route path="/menu" element={<MenuSection/>}/>
           </Route>
         </Routes>
       </Suspense>

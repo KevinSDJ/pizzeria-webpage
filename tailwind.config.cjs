@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       height:{
-        'screenX3':'calc(100vh * 3)'
+        'screenX3':'calc(100vh * 4)'
       },
       backgroundColor:{
         'primarybg':'#12242F'
