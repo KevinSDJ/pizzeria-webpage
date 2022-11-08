@@ -2,17 +2,42 @@ import Image1 from './../assets/imagenes/muzzarella.jpg'
 import Image2 from './../assets/imagenes/napolitana.jpg'
 import Image3 from './../assets/imagenes/jamonymorron.jpg'
 
-type Pr={
+export type Pr={
     size:number,
     price:number
 }
 
-type Pl = {
+export type Pl = {
     title:string,
     image:string,
     price:Pr[]|number,
     tag:string
 }
+
+export type OptNav={
+    tag:string,
+    name:string
+}
+
+export const menu_tags:OptNav[]=[
+    {
+        tag:'#pizza',
+        name:'pizza'
+    },
+    {
+        tag:'#patty',
+        name:'patty'
+    },
+    {
+        tag:'#dessert',
+        name:'dessert'
+    },
+    {
+        tag:'#beverages',
+        name:'beverages'
+    }
+]
+
 
 export const data:Pl[]=[
     {
@@ -32,7 +57,7 @@ export const data:Pl[]=[
                 price:24
             }
         ],
-        tag:'pizza'
+        tag:'#pizza'
     },
     {
         title:"napolitana",
@@ -51,7 +76,7 @@ export const data:Pl[]=[
                 price:28.60
             }
         ],
-        tag:'pizza'
+        tag:'#pizza'
     },
     {
         title:"Ham and cheese",
@@ -70,7 +95,7 @@ export const data:Pl[]=[
                 price:30.60
             }
         ],
-        tag:'pizza'
+        tag:'#pizza'
     }
 
 ]
