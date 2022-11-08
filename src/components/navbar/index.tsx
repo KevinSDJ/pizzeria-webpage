@@ -1,13 +1,26 @@
 import Logo from './../../assets/logo.webp'
 import { Link } from 'react-router-dom'
 import { BsFillBasket3Fill } from 'react-icons/bs'
+import {useScroll} from 'framer-motion'
+import { useEffect,useState } from 'react'
 import "./index.css"
 
 const NavBar = () => {
+    const {scrollY} =useScroll()
+    const [top,setIsTop]= useState<Boolean>(true)
+    useEffect(()=>{
+        return scrollY.onChange((latest) => {
+            
+            latest<24?
+            setIsTop(true)
+            :
+            setIsTop(false)
+          })
+    },[])
     return (
-        <header className='fixed w-full z-40 flex flex-row justify-between  lg:py-3 lg:px-20' >
+        <header className={`fixed w-full ${!top&&"bg-slate-800 shadow-xl h-16 transition-all duration-300 shadow-slate-700/20"} z-10 flex flex-row justify-between lg:py-3 lg:px-20`} >
             <div className='flex items-center space-x-2'>
-                <img className='logo-nv w-20' src={Logo} alt={'logo-image'} />
+                <img className='logo-nv w-auto h-14' src={Logo} alt={'logo-image'} />
                 <p className='logo-text text-3xl text-primary font-permanentMark'>
                     Pizza
                 </p>

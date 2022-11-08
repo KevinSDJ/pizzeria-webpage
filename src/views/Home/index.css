@@ -1,9 +1,8 @@
 .bg-object{
     position: fixed;
+    z-index: 0;
     width: 100vw;
     height: 100vh;
     background-color:greenyellow;
-    box-shadow: 0 0 90px #adff2f;
-    border: 4px solid greenyellow;
-    clip-path: polygon(70% 20%,40% 100%,0 100%);
+    clip-path: polygon(70% 30%,40% 100%,0 100%);
 }
