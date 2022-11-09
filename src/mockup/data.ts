@@ -1,6 +1,12 @@
 import Image1 from './../assets/imagenes/muzzarella.jpg'
 import Image2 from './../assets/imagenes/napolitana.jpg'
 import Image3 from './../assets/imagenes/jamonymorron.jpg'
+import Image4 from './../assets/imagenes/empanada_atun.jpg'
+import Image5 from './../assets/imagenes/empanada_carne.jpg'
+import Image6 from './../assets/imagenes/empanada_jamonyqueso.jpg'
+import Image7 from './../assets/imagenes/agua.jpg'
+import Image8 from './../assets/imagenes/gaseosa.jpg'
+import Image9 from './../assets/imagenes/cerveza.jpg'
 
 export type Pr={
     size:number,
@@ -38,8 +44,49 @@ export const menu_tags:OptNav[]=[
     }
 ]
 
+const beverages:Pl[]=[
+    {
+        title:"Water",
+        image:Image7,
+        price:4,
+        tag:'#beverages'
+    },
+    {
+        title:"soda",
+        image:Image8,
+        price:4,
+        tag:'#beverages'
+    },
+    {
+        title:"beer",
+        image:Image9,
+        price:4,
+        tag:'#beverages'
+    }
+]
 
-export const data:Pl[]=[
+const patty:Pl[]=[
+    {
+        title:"tuna pie",
+        image:Image4,
+        price:4,
+        tag:'#patty'
+    },
+    {
+        title:"meat pie",
+        image:Image5,
+        price:8,
+        tag:'#patty'
+    },
+    {
+        title:"ham and cheese pie",
+        image:Image6,
+        price:8,
+        tag:'#patty'
+    }
+]
+
+const pizza:Pl[]=[
     {
         title:"muzzarella",
         image:Image1,
@@ -96,6 +143,7 @@ export const data:Pl[]=[
             }
         ],
         tag:'#pizza'
-    }
-
+    },
 ]
+
+export const data:Pl[]=[...pizza,...patty,...beverages]
